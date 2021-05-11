@@ -77,3 +77,27 @@ $tempdir/aws-elastic-beanstalk-cli-setup/scripts/bundled_installer
     # # #   2. Zsh:
    
     # # #      echo 'export PATH=/home/kwhatcher/.pyenv/versions/3.7.2/bin:$PATH' >> /home/kwhatcher/.zshrc && source /home/kwhatcher/.zshrc
+
+
+
+
+###### GO
+#https://github.com/syndbg/goenv/blob/master/INSTALL.md
+# git clone https://github.com/syndbg/goenv.git ~/.goenv
+
+# echo 'export GOENV_ROOT="$HOME/.goenv"' >> ~/.bash_profile
+# echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+# echo 'eval "$(goenv init -)"' >> ~/.bash_profile
+# echo 'export PATH="$GOROOT/bin:$PATH"' >> ~/.bash_profile
+# echo 'export PATH="$PATH:$GOPATH/bin"' >> ~/.bash_profile
+
+
+##### Di Resolve
+
+#https://support.system76.com/articles/install-davinci-resolve/
+
+#https://www.danieltufvesson.com/makeresolvedeb
+
+sudo apt install -y libssl1.1 ocl-icd-opencl-dev fakeroot xorriso
+
+
