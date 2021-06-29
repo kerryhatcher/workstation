@@ -101,3 +101,7 @@ $tempdir/aws-elastic-beanstalk-cli-setup/scripts/bundled_installer
 sudo apt install -y libssl1.1 ocl-icd-opencl-dev fakeroot xorriso
 
 
+
+##### Looks
+
+sudo apt install gir1.2-gmenu-3.0 gnome-menus libgettextpo-dev gettext xdg-utils xdg-user-dirs-gtk gnome-tweak-tool
