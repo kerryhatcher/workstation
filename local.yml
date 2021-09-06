@@ -2,16 +2,20 @@
   become: true
   tasks:
   - name: Add flathub repo
-      flatpak_remote:
+      community.general.flatpak:
         name: flathub
         state: present
         flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
         method: user
   - name: Install packages
     apt:
-      name: ['htop', 'mc', 'tmux', 'neofetch']
+      name: ['htop', 'mc', 'tmux', 'neofetch', 'snapd']
   - name: Install the Flameshot package from flathub for current user
     community.general.flatpak:
       name: org.flameshot.Flameshot
       state: present
       method: user
+  - name: Install gitkraken with option --classic
+    community.general.snap:
+      name: gitkraken
+      classic: yes
