@@ -18,3 +18,8 @@
     community.general.snap:
       name: flameshot
       classic: yes
+  - name: Install Discord system-wide
+    community.general.flatpak:
+      name: com.discordapp.Discord
+      state: present
+      remote: flathub
