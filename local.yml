@@ -1,6 +1,7 @@
 - hosts: localhost
   become: true
   tasks:
+  - include: tasks/awscli.yml
   - name: Add the flathub flatpak repository remote to the user installation
     community.general.flatpak_remote:
       name: flathub
@@ -22,3 +23,4 @@
       name: com.discordapp.Discord
       state: present
       remote: flathub
+    
