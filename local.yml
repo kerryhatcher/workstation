@@ -3,4 +3,4 @@
   tasks:
   - name: Install packages
     apt:
-      name: ['htop', 'mc', 'tmux']
+      name: ['htop', 'mc', 'tmux', 'neofetch']
