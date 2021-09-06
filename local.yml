@@ -4,3 +4,8 @@
   - name: Install packages
     apt:
       name: ['htop', 'mc', 'tmux', 'neofetch']
+    - name: Install the gedit package from flathub for current user
+    community.general.flatpak:
+      name: org.gnome.gedit
+      state: present
+      method: user
