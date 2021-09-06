@@ -4,8 +4,8 @@
   - name: Install packages
     apt:
       name: ['htop', 'mc', 'tmux', 'neofetch']
-    - name: Install the gedit package from flathub for current user
+  - name: Install the Flameshot package from flathub for current user
     community.general.flatpak:
-      name: org.gnome.gedit
+      name: org.flameshot.Flameshot
       state: present
       method: user
